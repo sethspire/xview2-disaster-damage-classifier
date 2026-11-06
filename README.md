@@ -4,6 +4,8 @@ Deep learning for building localization and structural damage classification fro
 
 This project was completed as part of the University of Virginia M.S. in Data Science deep learning curriculum using the [xView2](https://xview2.org/) disaster-damage dataset.
 
+![6 images showing before and after satelite imagery of a natural distaster with the overlays and masks of buidling locations and building damage](img_output/image15.png)
+
 ## Overview
 
 The xView2 dataset contains paired satellite images captured before and after natural disasters, along with building footprints and damage labels. The project framed disaster assessment as two related computer-vision tasks:
@@ -41,6 +43,10 @@ The final U-Net achieved a **0.89 Dice score for building segmentation**, compar
 Among the four architectures evaluated by the team, U-Net produced the strongest building-localization performance, while SegFormer performed best on damage classification.
 
 The results suggest that architectures optimized for precise spatial localization and those optimized for broader contextual classification may provide complementary strengths for disaster-damage assessment.
+
+Below is an example of the output from the U-Net implementation, showing the before satellite imagery with ground-truth buildings on the top row and the after imagery with the predicted buildings and damage. It detects buildings well and does fairly well assessing damage level.
+
+![6 images showing before/after satelite imagery of a natural disaster with overlays for the masks of true building damage and predicted damage](img_output/image16.png)
 
 ## Dataset
 
